@@ -19,8 +19,10 @@ public class FechaTest {
     private Fecha diaMalFebreroBisiesto1 = new Fecha(29, 2, 2007);
     private Fecha diaMalFebreroBisiesto2 = new Fecha(29, 2, 1900);
 
+    
     @Test
     public void testEsFechaValida() {
+    	
         assertTrue(fechaCorrecta.esFechaValida());
         assertFalse(mesMal1.esFechaValida());
         assertFalse(mesMal2.esFechaValida());
@@ -33,5 +35,6 @@ public class FechaTest {
         assertTrue(diaBienFebreroBisiesto2.esFechaValida());
         assertFalse(diaMalFebreroBisiesto1.esFechaValida());
         assertFalse(diaMalFebreroBisiesto2.esFechaValida());
+        
     }
 }
